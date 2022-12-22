@@ -15,5 +15,28 @@ function shortcut(string){
   return string.replace(/[aeiou]/g,'')
 }
 
+// example 2
 //test
 console.log(shortcut('test'));
+
+function shortcut2 (string) {
+  return string
+    .split('')
+    .filter(str => !'aeiou'.includes(str))
+    .join('')
+}
+
+// test
+console.log(shortcut2('lambda'))
+
+// example 3
+function shortcut3(string){
+
+
+  let newString = string.replace(/[aeiou]/g, '')
+  return newString
+
+ 
+ }
+ console.log(shortcut3('test'))
+ // test 3
